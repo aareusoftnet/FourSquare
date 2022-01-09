@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zM-ZA-KaZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOm-LY-Smh">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NUh-Cf-WFE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iut-gQ-kQb">
+                                <rect key="frame" x="0.0" y="88" width="375" height="184"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgSplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="eE0-pO-TdW">
+                                <rect key="frame" x="96" y="272" width="183" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eE0-pO-TdW" secondAttribute="height" multiplier="183:268" id="UWT-Sx-DW4"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1a-Xl-G2Z">
+                                <rect key="frame" x="0.0" y="540" width="375" height="194"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lb-KY-TcG">
+                                <rect key="frame" x="0.0" y="734" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ryL-rb-6FP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJt-IB-L5T">
+                                <rect key="frame" x="0.0" y="778" width="375" height="34"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="app0D1021"/>
+                        <constraints>
+                            <constraint firstItem="Iut-gQ-kQb" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.226601" id="1pn-S9-jbV"/>
+                            <constraint firstAttribute="trailing" secondItem="XJt-IB-L5T" secondAttribute="trailing" id="3yS-5u-y1P"/>
+                            <constraint firstItem="Y1a-Xl-G2Z" firstAttribute="leading" secondItem="8Lb-KY-TcG" secondAttribute="leading" id="4zI-Wo-rUP"/>
+                            <constraint firstItem="eE0-pO-TdW" firstAttribute="top" secondItem="Iut-gQ-kQb" secondAttribute="bottom" id="Aa8-36-Qd9"/>
+                            <constraint firstItem="Iut-gQ-kQb" firstAttribute="top" secondItem="jOm-LY-Smh" secondAttribute="bottom" id="BDb-Zk-Kyd"/>
+                            <constraint firstItem="Y1a-Xl-G2Z" firstAttribute="top" secondItem="eE0-pO-TdW" secondAttribute="bottom" id="CSc-P3-mvD"/>
+                            <constraint firstItem="8Lb-KY-TcG" firstAttribute="top" secondItem="Y1a-Xl-G2Z" secondAttribute="bottom" id="F9U-9K-fmg"/>
+                            <constraint firstItem="XJt-IB-L5T" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="I1P-F8-ySV"/>
+                            <constraint firstAttribute="bottom" secondItem="XJt-IB-L5T" secondAttribute="bottom" id="JDX-w5-ZkG"/>
+                            <constraint firstAttribute="trailing" secondItem="9zM-ZA-KaZ" secondAttribute="trailing" id="QMV-Kq-85w"/>
+                            <constraint firstItem="jOm-LY-Smh" firstAttribute="top" secondItem="9zM-ZA-KaZ" secondAttribute="bottom" id="ReR-rC-XEk"/>
+                            <constraint firstItem="XJt-IB-L5T" firstAttribute="top" secondItem="8Lb-KY-TcG" secondAttribute="bottom" id="Rec-6O-9jj"/>
+                            <constraint firstItem="jOm-LY-Smh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SwM-kZ-m1v"/>
+                            <constraint firstItem="Iut-gQ-kQb" firstAttribute="leading" secondItem="jOm-LY-Smh" secondAttribute="leading" id="bor-uU-6Rj"/>
+                            <constraint firstItem="eE0-pO-TdW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dSX-jt-DW4"/>
+                            <constraint firstItem="8Lb-KY-TcG" firstAttribute="trailing" secondItem="XJt-IB-L5T" secondAttribute="trailing" id="fTt-zP-bzT"/>
+                            <constraint firstItem="8Lb-KY-TcG" firstAttribute="leading" secondItem="XJt-IB-L5T" secondAttribute="leading" id="g4R-xS-X8y"/>
+                            <constraint firstItem="Y1a-Xl-G2Z" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.238916" id="i8c-Fb-VIs"/>
+                            <constraint firstItem="9zM-ZA-KaZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="lfz-oh-fZu"/>
+                            <constraint firstItem="jOm-LY-Smh" firstAttribute="trailing" secondItem="9zM-ZA-KaZ" secondAttribute="trailing" id="pS4-Jh-01z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Lb-KY-TcG" secondAttribute="bottom" id="rZJ-6O-DI1"/>
+                            <constraint firstItem="Iut-gQ-kQb" firstAttribute="trailing" secondItem="jOm-LY-Smh" secondAttribute="trailing" id="rdq-A1-bUP"/>
+                            <constraint firstItem="9zM-ZA-KaZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="rfI-ME-5PW"/>
+                            <constraint firstItem="jOm-LY-Smh" firstAttribute="leading" secondItem="9zM-ZA-KaZ" secondAttribute="leading" id="xET-wq-5GF"/>
+                            <constraint firstItem="Y1a-Xl-G2Z" firstAttribute="trailing" secondItem="8Lb-KY-TcG" secondAttribute="trailing" id="ylA-ij-C2Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgSplashLogo" width="183" height="268"/>
+        <namedColor name="app0D1021">
+            <color red="0.050980392156862744" green="0.062745098039215685" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

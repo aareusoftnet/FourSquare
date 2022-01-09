@@ -1,0 +1,11 @@
+# iOS Ignorance
+*.DS_Store
+.DS_Store
+SourceCode/FourSquare/*.DS_Store
+SourceCode/FourSquare/.DS_Store
+SourceCode/FourSquare/Podfile.lock
+SourceCode/FourSquare/FourSquare.xcodeproj/project.xcworkspace
+SourceCode/FourSquare/FourSquare.xcodeproj/xcuserdata
+SourceCode/FourSquare/FourSquare.xcodeproj/xcshareddata
+SourceCode/FourSquare/FourSquare.xcodeproj/project.xcworkspace/xcuserdata
+SourceCode/FourSquare/FourSquare.xcodeproj/project.xcworkspace/SourceCode/FourSquare/

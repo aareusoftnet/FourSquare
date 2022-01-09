@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3655FAF278AD57F008E1484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3655FAE278AD57F008E1484 /* AppDelegate.swift */; };
+		A3655FB1278AD57F008E1484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3655FB0278AD57F008E1484 /* SceneDelegate.swift */; };
+		A3655FB3278AD57F008E1484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3655FB2278AD57F008E1484 /* ViewController.swift */; };
+		A3655FB6278AD57F008E1484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3655FB4278AD57F008E1484 /* Main.storyboard */; };
+		A3655FB9278AD57F008E1484 /* FourSquare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3655FB7278AD57F008E1484 /* FourSquare.xcdatamodeld */; };
+		A3655FBB278AD580008E1484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3655FBA278AD580008E1484 /* Assets.xcassets */; };
+		A3655FBE278AD580008E1484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3655FBC278AD580008E1484 /* LaunchScreen.storyboard */; };
+		A3A641BD278ADC7D00558462 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641BA278ADC7D00558462 /* UIFontExtensions.swift */; };
+		A3A641BE278ADC7D00558462 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641BB278ADC7D00558462 /* UIColorExtensions.swift */; };
+		A3A641C6278ADD8D00558462 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C1278ADD8D00558462 /* ProximaNova-Light.otf */; };
+		A3A641C7278ADD8D00558462 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C2278ADD8D00558462 /* ProximaNova-Semibold.otf */; };
+		A3A641C8278ADD8D00558462 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C3278ADD8D00558462 /* ProximaNova-Bold.otf */; };
+		A3A641C9278ADD8D00558462 /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C4278ADD8D00558462 /* ProximaNova-Black.otf */; };
+		A3A641CA278ADD8D00558462 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C5278ADD8D00558462 /* ProximaNova-Regular.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A3655FAB278AD57F008E1484 /* FourSquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3655FAE278AD57F008E1484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3655FB0278AD57F008E1484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A3655FB2278AD57F008E1484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3655FB5278AD57F008E1484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3655FB8278AD57F008E1484 /* FourSquare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FourSquare.xcdatamodel; sourceTree = "<group>"; };
+		A3655FBA278AD580008E1484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3655FBD278AD580008E1484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3655FBF278AD580008E1484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A641BA278ADC7D00558462 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		A3A641BB278ADC7D00558462 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		A3A641C1278ADD8D00558462 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		A3A641C2278ADD8D00558462 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		A3A641C3278ADD8D00558462 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		A3A641C4278ADD8D00558462 /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		A3A641C5278ADD8D00558462 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3655FA8278AD57F008E1484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3655FA2278AD57F008E1484 = {
+			isa = PBXGroup;
+			children = (
+				A3655FAD278AD57F008E1484 /* FourSquare */,
+				A3655FAC278AD57F008E1484 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3655FAC278AD57F008E1484 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3655FAB278AD57F008E1484 /* FourSquare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3655FAD278AD57F008E1484 /* FourSquare */ = {
+			isa = PBXGroup;
+			children = (
+				A3655FC6278AD59D008E1484 /* Storyboards */,
+				A3655FC5278AD58E008E1484 /* ViewControllers */,
+				A3A641B8278ADC7D00558462 /* Extensions */,
+				A3A641BF278ADD8D00558462 /* Resources */,
+				A3655FC7278AD600008E1484 /* Supports */,
+			);
+			path = FourSquare;
+			sourceTree = "<group>";
+		};
+		A3655FC5278AD58E008E1484 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3655FAE278AD57F008E1484 /* AppDelegate.swift */,
+				A3655FB0278AD57F008E1484 /* SceneDelegate.swift */,
+				A3655FB2278AD57F008E1484 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A3655FC6278AD59D008E1484 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A3655FBC278AD580008E1484 /* LaunchScreen.storyboard */,
+				A3655FB4278AD57F008E1484 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A3655FC7278AD600008E1484 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				A3655FBA278AD580008E1484 /* Assets.xcassets */,
+				A3655FBF278AD580008E1484 /* Info.plist */,
+				A3655FB7278AD57F008E1484 /* FourSquare.xcdatamodeld */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		A3A641B8278ADC7D00558462 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3A641BA278ADC7D00558462 /* UIFontExtensions.swift */,
+				A3A641BB278ADC7D00558462 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3A641BF278ADD8D00558462 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3A641C0278ADD8D00558462 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3A641C0278ADD8D00558462 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A3A641C4278ADD8D00558462 /* ProximaNova-Black.otf */,
+				A3A641C3278ADD8D00558462 /* ProximaNova-Bold.otf */,
+				A3A641C1278ADD8D00558462 /* ProximaNova-Light.otf */,
+				A3A641C5278ADD8D00558462 /* ProximaNova-Regular.otf */,
+				A3A641C2278ADD8D00558462 /* ProximaNova-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3655FAA278AD57F008E1484 /* FourSquare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3655FC2278AD580008E1484 /* Build configuration list for PBXNativeTarget "FourSquare" */;
+			buildPhases = (
+				A3655FA7278AD57F008E1484 /* Sources */,
+				A3655FA8278AD57F008E1484 /* Frameworks */,
+				A3655FA9278AD57F008E1484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FourSquare;
+			productName = FourSquare;
+			productReference = A3655FAB278AD57F008E1484 /* FourSquare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3655FA3278AD57F008E1484 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A3655FAA278AD57F008E1484 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A3655FA6278AD57F008E1484 /* Build configuration list for PBXProject "FourSquare" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3655FA2278AD57F008E1484;
+			productRefGroup = A3655FAC278AD57F008E1484 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3655FAA278AD57F008E1484 /* FourSquare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3655FA9278AD57F008E1484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3655FBE278AD580008E1484 /* LaunchScreen.storyboard in Resources */,
+				A3A641CA278ADD8D00558462 /* ProximaNova-Regular.otf in Resources */,
+				A3A641C6278ADD8D00558462 /* ProximaNova-Light.otf in Resources */,
+				A3A641C7278ADD8D00558462 /* ProximaNova-Semibold.otf in Resources */,
+				A3A641C8278ADD8D00558462 /* ProximaNova-Bold.otf in Resources */,
+				A3655FBB278AD580008E1484 /* Assets.xcassets in Resources */,
+				A3A641C9278ADD8D00558462 /* ProximaNova-Black.otf in Resources */,
+				A3655FB6278AD57F008E1484 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3655FA7278AD57F008E1484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3655FB9278AD57F008E1484 /* FourSquare.xcdatamodeld in Sources */,
+				A3A641BE278ADC7D00558462 /* UIColorExtensions.swift in Sources */,
+				A3655FB3278AD57F008E1484 /* ViewController.swift in Sources */,
+				A3A641BD278ADC7D00558462 /* UIFontExtensions.swift in Sources */,
+				A3655FAF278AD57F008E1484 /* AppDelegate.swift in Sources */,
+				A3655FB1278AD57F008E1484 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3655FB4278AD57F008E1484 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3655FB5278AD57F008E1484 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3655FBC278AD580008E1484 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3655FBD278AD580008E1484 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3655FC0278AD580008E1484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3655FC1278AD580008E1484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3655FC3278AD580008E1484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4FB79X8BS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FourSquare/Supports/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.rn.foursquare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RN_Yudiz_Wildcard;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A3655FC4278AD580008E1484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4FB79X8BS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FourSquare/Supports/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.rn.foursquare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RN_Yudiz_Wildcard;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3655FA6278AD57F008E1484 /* Build configuration list for PBXProject "FourSquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3655FC0278AD580008E1484 /* Debug */,
+				A3655FC1278AD580008E1484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3655FC2278AD580008E1484 /* Build configuration list for PBXNativeTarget "FourSquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3655FC3278AD580008E1484 /* Debug */,
+				A3655FC4278AD580008E1484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3655FB7278AD57F008E1484 /* FourSquare.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3655FB8278AD57F008E1484 /* FourSquare.xcdatamodel */,
+			);
+			currentVersion = A3655FB8278AD57F008E1484 /* FourSquare.xcdatamodel */;
+			path = FourSquare.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A3655FA3278AD57F008E1484 /* Project object */;
+}
