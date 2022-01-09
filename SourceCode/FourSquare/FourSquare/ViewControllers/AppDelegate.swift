@@ -77,3 +77,7 @@ extension AppDelegate {
         }
     }
 }
+
+//MARK: Global UIs updates
+extension AppDelegate {    
+}

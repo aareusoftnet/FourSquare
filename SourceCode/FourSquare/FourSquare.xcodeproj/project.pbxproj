@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A3655FAF278AD57F008E1484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3655FAE278AD57F008E1484 /* AppDelegate.swift */; };
 		A3655FB1278AD57F008E1484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3655FB0278AD57F008E1484 /* SceneDelegate.swift */; };
-		A3655FB3278AD57F008E1484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3655FB2278AD57F008E1484 /* ViewController.swift */; };
 		A3655FB6278AD57F008E1484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3655FB4278AD57F008E1484 /* Main.storyboard */; };
 		A3655FB9278AD57F008E1484 /* FourSquare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3655FB7278AD57F008E1484 /* FourSquare.xcdatamodeld */; };
 		A3655FBB278AD580008E1484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3655FBA278AD580008E1484 /* Assets.xcassets */; };
@@ -21,13 +20,17 @@
 		A3A641C8278ADD8D00558462 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C3278ADD8D00558462 /* ProximaNova-Bold.otf */; };
 		A3A641C9278ADD8D00558462 /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C4278ADD8D00558462 /* ProximaNova-Black.otf */; };
 		A3A641CA278ADD8D00558462 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C5278ADD8D00558462 /* ProximaNova-Regular.otf */; };
+		A3A641CD278B05BD00558462 /* ParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641CC278B05BD00558462 /* ParentVC.swift */; };
+		A3A641D0278B05FF00558462 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641CF278B05FF00558462 /* AppConstant.swift */; };
+		A3A641D4278B06FA00558462 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641D3278B06FA00558462 /* DashboardVC.swift */; };
+		A3B638BB278B0D1800F55B85 /* ClosestVenueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */; };
+		A3B638BE278B0D7800F55B85 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3655FAB278AD57F008E1484 /* FourSquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3655FAE278AD57F008E1484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3655FB0278AD57F008E1484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3655FB2278AD57F008E1484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3655FB5278AD57F008E1484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3655FB8278AD57F008E1484 /* FourSquare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FourSquare.xcdatamodel; sourceTree = "<group>"; };
 		A3655FBA278AD580008E1484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +43,11 @@
 		A3A641C3278ADD8D00558462 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
 		A3A641C4278ADD8D00558462 /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
 		A3A641C5278ADD8D00558462 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		A3A641CC278B05BD00558462 /* ParentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentVC.swift; sourceTree = "<group>"; };
+		A3A641CF278B05FF00558462 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		A3A641D3278B06FA00558462 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestVenueVC.swift; sourceTree = "<group>"; };
+		A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 				A3655FC6278AD59D008E1484 /* Storyboards */,
 				A3655FC5278AD58E008E1484 /* ViewControllers */,
 				A3A641B8278ADC7D00558462 /* Extensions */,
+				A3A641CE278B05FF00558462 /* Constants */,
 				A3A641BF278ADD8D00558462 /* Resources */,
 				A3655FC7278AD600008E1484 /* Supports */,
 			);
@@ -86,7 +95,10 @@
 			children = (
 				A3655FAE278AD57F008E1484 /* AppDelegate.swift */,
 				A3655FB0278AD57F008E1484 /* SceneDelegate.swift */,
-				A3655FB2278AD57F008E1484 /* ViewController.swift */,
+				A3A641CB278B05A100558462 /* Parent */,
+				A3A641D2278B06B300558462 /* Dashboard */,
+				A3B638B9278B0CF200F55B85 /* ClosestVenue */,
+				A3B638BC278B0D4100F55B85 /* AboutUs */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -137,6 +149,46 @@
 				A3A641C2278ADD8D00558462 /* ProximaNova-Semibold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A3A641CB278B05A100558462 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				A3A641CC278B05BD00558462 /* ParentVC.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		A3A641CE278B05FF00558462 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A3A641CF278B05FF00558462 /* AppConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A3A641D2278B06B300558462 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A3A641D3278B06FA00558462 /* DashboardVC.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A3B638B9278B0CF200F55B85 /* ClosestVenue */ = {
+			isa = PBXGroup;
+			children = (
+				A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */,
+			);
+			path = ClosestVenue;
+			sourceTree = "<group>";
+		};
+		A3B638BC278B0D4100F55B85 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */,
+			);
+			path = AboutUs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B638BB278B0D1800F55B85 /* ClosestVenueVC.swift in Sources */,
 				A3655FB9278AD57F008E1484 /* FourSquare.xcdatamodeld in Sources */,
 				A3A641BE278ADC7D00558462 /* UIColorExtensions.swift in Sources */,
-				A3655FB3278AD57F008E1484 /* ViewController.swift in Sources */,
+				A3A641D0278B05FF00558462 /* AppConstant.swift in Sources */,
+				A3B638BE278B0D7800F55B85 /* AboutUsVC.swift in Sources */,
+				A3A641CD278B05BD00558462 /* ParentVC.swift in Sources */,
 				A3A641BD278ADC7D00558462 /* UIFontExtensions.swift in Sources */,
+				A3A641D4278B06FA00558462 /* DashboardVC.swift in Sources */,
 				A3655FAF278AD57F008E1484 /* AppDelegate.swift in Sources */,
 				A3655FB1278AD57F008E1484 /* SceneDelegate.swift in Sources */,
 			);
