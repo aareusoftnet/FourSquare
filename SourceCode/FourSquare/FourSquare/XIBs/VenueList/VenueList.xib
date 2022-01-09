@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="112" id="KGk-i7-Jjw" customClass="VenueList" customModule="FourSquare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaV-qS-eq3">
+                        <rect key="frame" x="12" y="0.0" width="296" height="100"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIx-VK-ZOy">
+                                <rect key="frame" x="12" y="12" width="70" height="15"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retailer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxo-fj-juX">
+                                        <rect key="frame" x="12" y="1" width="46" height="13"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="13"/>
+                                        <color key="textColor" name="appFFFFFF"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="appFFD100"/>
+                                <constraints>
+                                    <constraint firstItem="Lxo-fj-juX" firstAttribute="leading" secondItem="JIx-VK-ZOy" secondAttribute="leading" constant="12" id="8Dh-Qi-D5f"/>
+                                    <constraint firstItem="Lxo-fj-juX" firstAttribute="top" secondItem="JIx-VK-ZOy" secondAttribute="top" constant="1" id="MvI-MJ-TSw"/>
+                                    <constraint firstAttribute="height" constant="15" id="Sa8-s9-CIv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lxo-fj-juX" secondAttribute="bottom" constant="1" id="Ve8-rn-j27"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lxo-fj-juX" secondAttribute="trailing" constant="12" id="tqH-QZ-jKu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Meters away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbk-MF-BWE">
+                                <rect key="frame" x="202.66666666666666" y="12" width="81.333333333333343" height="15"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                <color key="textColor" name="appC8C8C8"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sona Hi Sona Jewellers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp8-WI-f9A">
+                                <rect key="frame" x="12" y="35" width="272" height="15"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                <color key="textColor" name="appFFFFFF"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navnirman Bank Bhavan Shrimali Soc, Rasala Marg, Navrangpura, Ahmedabad, Gujarat, IN, 382470" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAU-fe-wFL">
+                                <rect key="frame" x="12" y="52" width="272" height="39"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
+                                <color key="textColor" name="appC8C8C8"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="app1C203D"/>
+                        <constraints>
+                            <constraint firstItem="Sp8-WI-f9A" firstAttribute="top" secondItem="Kbk-MF-BWE" secondAttribute="bottom" constant="8" id="5jn-J4-PLy"/>
+                            <constraint firstItem="bAU-fe-wFL" firstAttribute="trailing" secondItem="Sp8-WI-f9A" secondAttribute="trailing" id="XUA-cn-AnD"/>
+                            <constraint firstAttribute="trailing" secondItem="Kbk-MF-BWE" secondAttribute="trailing" constant="12" id="YL8-yC-Lx2"/>
+                            <constraint firstItem="Sp8-WI-f9A" firstAttribute="leading" secondItem="JIx-VK-ZOy" secondAttribute="leading" id="cGa-qK-Tng"/>
+                            <constraint firstItem="Sp8-WI-f9A" firstAttribute="trailing" secondItem="Kbk-MF-BWE" secondAttribute="trailing" id="ccH-T8-nLX"/>
+                            <constraint firstItem="bAU-fe-wFL" firstAttribute="leading" secondItem="Sp8-WI-f9A" secondAttribute="leading" id="eWc-rD-wZR"/>
+                            <constraint firstItem="bAU-fe-wFL" firstAttribute="top" secondItem="Sp8-WI-f9A" secondAttribute="bottom" constant="2" id="fZx-9q-yTK"/>
+                            <constraint firstItem="Kbk-MF-BWE" firstAttribute="centerY" secondItem="JIx-VK-ZOy" secondAttribute="centerY" id="i3g-Sa-liD"/>
+                            <constraint firstAttribute="bottom" secondItem="bAU-fe-wFL" secondAttribute="bottom" constant="9" id="mzz-fk-AHz"/>
+                            <constraint firstItem="Kbk-MF-BWE" firstAttribute="top" secondItem="qaV-qS-eq3" secondAttribute="top" constant="12" id="ntk-8F-kDy"/>
+                            <constraint firstItem="JIx-VK-ZOy" firstAttribute="top" secondItem="qaV-qS-eq3" secondAttribute="top" constant="12" id="w2e-jR-p7e"/>
+                            <constraint firstItem="JIx-VK-ZOy" firstAttribute="leading" secondItem="qaV-qS-eq3" secondAttribute="leading" constant="12" id="wGw-MZ-CXn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qaV-qS-eq3" secondAttribute="trailing" constant="12" id="I8a-4k-dlr"/>
+                    <constraint firstItem="qaV-qS-eq3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NTn-xq-15u"/>
+                    <constraint firstItem="qaV-qS-eq3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="kMb-GB-TOd"/>
+                    <constraint firstAttribute="bottom" secondItem="qaV-qS-eq3" secondAttribute="bottom" constant="12" id="sRj-LL-D5Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblAddress" destination="bAU-fe-wFL" id="B7f-Jl-dfJ"/>
+                <outlet property="lblCategory" destination="Lxo-fj-juX" id="bLz-UP-Tx1"/>
+                <outlet property="lblDistance" destination="Kbk-MF-BWE" id="cUO-Bl-R1m"/>
+                <outlet property="lblName" destination="Sp8-WI-f9A" id="xbX-E0-Z8N"/>
+                <outlet property="viewCategory" destination="JIx-VK-ZOy" id="RVA-Oi-HCF"/>
+                <outlet property="viewContainer" destination="qaV-qS-eq3" id="8Kl-TO-rNG"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="108.62068965517241"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="app1C203D">
+            <color red="0.10980392156862745" green="0.12549019607843137" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appC8C8C8">
+            <color red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appFFD100">
+            <color red="1" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appFFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
