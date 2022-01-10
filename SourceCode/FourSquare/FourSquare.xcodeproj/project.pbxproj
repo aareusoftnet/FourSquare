@@ -22,6 +22,7 @@
 		A3867288278B241400BFAA04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3867287278B241400BFAA04 /* Localizable.strings */; };
 		A386728A278B246F00BFAA04 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3867289278B246F00BFAA04 /* StringExtensions.swift */; };
 		A386728C278B296F00BFAA04 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386728B278B296F00BFAA04 /* UIViewExtensions.swift */; };
+		A386B256278C9AC90028E783 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386B255278C9AC90028E783 /* UserLocation.swift */; };
 		A3A641BD278ADC7D00558462 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641BA278ADC7D00558462 /* UIFontExtensions.swift */; };
 		A3A641BE278ADC7D00558462 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641BB278ADC7D00558462 /* UIColorExtensions.swift */; };
 		A3A641C6278ADD8D00558462 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C1278ADD8D00558462 /* ProximaNova-Light.otf */; };
@@ -54,6 +55,7 @@
 		A3867287278B241400BFAA04 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A3867289278B246F00BFAA04 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A386728B278B296F00BFAA04 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		A386B255278C9AC90028E783 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 		A3A641BA278ADC7D00558462 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		A3A641BB278ADC7D00558462 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		A3A641C1278ADD8D00558462 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
@@ -110,8 +112,7 @@
 				A3867280278B207F00BFAA04 /* XIBs */,
 				A3655FC6278AD59D008E1484 /* Storyboards */,
 				A3655FC5278AD58E008E1484 /* ViewControllers */,
-				A3A641B8278ADC7D00558462 /* Extensions */,
-				A3A641CE278B05FF00558462 /* Constants */,
+				A386B253278C99670028E783 /* Others */,
 				A3A641BF278ADD8D00558462 /* Resources */,
 				A3655FC7278AD600008E1484 /* Supports */,
 			);
@@ -184,6 +185,24 @@
 				A3867287278B241400BFAA04 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		A386B253278C99670028E783 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A386B254278C996F0028E783 /* UserLocation */,
+				A3A641B8278ADC7D00558462 /* Extensions */,
+				A3A641CE278B05FF00558462 /* Constants */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		A386B254278C996F0028E783 /* UserLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A386B255278C9AC90028E783 /* UserLocation.swift */,
+			);
+			path = UserLocation;
 			sourceTree = "<group>";
 		};
 		A3A641B8278ADC7D00558462 /* Extensions */ = {
@@ -343,6 +362,7 @@
 				A3655FB9278AD57F008E1484 /* FourSquare.xcdatamodeld in Sources */,
 				A386728C278B296F00BFAA04 /* UIViewExtensions.swift in Sources */,
 				A3A641BE278ADC7D00558462 /* UIColorExtensions.swift in Sources */,
+				A386B256278C9AC90028E783 /* UserLocation.swift in Sources */,
 				A3A641D0278B05FF00558462 /* AppConstant.swift in Sources */,
 				A3B638BE278B0D7800F55B85 /* AboutUsVC.swift in Sources */,
 				A3867284278B216000BFAA04 /* LocationPermission.swift in Sources */,
@@ -506,6 +526,9 @@
 				DEVELOPMENT_TEAM = R4FB79X8BS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FourSquare/Supports/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your precise location is used to display closest venue near by your position.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your precise location is used to display closest venue near by your position.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your precise location is used to display closest venue near by your position.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -540,6 +563,9 @@
 				DEVELOPMENT_TEAM = R4FB79X8BS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FourSquare/Supports/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your precise location is used to display closest venue near by your position.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your precise location is used to display closest venue near by your position.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your precise location is used to display closest venue near by your position.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
