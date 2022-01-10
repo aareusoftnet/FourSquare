@@ -34,7 +34,6 @@ class LocationPermission: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewBackground.alpha = 1
     }
 }
 

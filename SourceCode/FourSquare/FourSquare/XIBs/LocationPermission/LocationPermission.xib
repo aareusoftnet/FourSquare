@@ -52,10 +52,10 @@
                     </constraints>
                 </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jap-Da-Y76">
-                    <rect key="frame" x="0.0" y="515.33333333333337" width="375" height="262.66666666666663"/>
+                    <rect key="frame" x="0.0" y="530" width="375" height="248"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgE-ru-Pxc">
-                            <rect key="frame" x="28" y="51" width="319" height="70"/>
+                            <rect key="frame" x="15" y="51" width="345" height="60"/>
                             <string key="text">We’d like to know your
 location.</string>
                             <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="30"/>
@@ -63,16 +63,16 @@ location.</string>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By allowing Location Permissions we can show you nearby location venues." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niY-5s-NOB">
-                            <rect key="frame" x="28" y="139" width="319" height="32.666666666666657"/>
+                            <rect key="frame" x="15" y="129" width="345" height="28"/>
                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                             <color key="textColor" name="appC8C8C8"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jby-jN-WhG">
-                            <rect key="frame" x="28" y="207.66666666666663" width="319" height="40"/>
+                            <rect key="frame" x="15" y="193" width="345" height="40"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K4-fB-4du">
-                                    <rect key="frame" x="0.0" y="0.0" width="319" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="345" height="40"/>
                                     <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="14"/>
                                     <state key="normal" title="Sure, Ask Me">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -101,14 +101,14 @@ location.</string>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="jby-jN-WhG" secondAttribute="bottom" constant="15" id="8Bd-qH-W5u"/>
                         <constraint firstItem="niY-5s-NOB" firstAttribute="leading" secondItem="jby-jN-WhG" secondAttribute="leading" id="Qmv-cI-k4q"/>
-                        <constraint firstAttribute="trailing" secondItem="jby-jN-WhG" secondAttribute="trailing" constant="28" id="UWd-3f-7Ob"/>
+                        <constraint firstAttribute="trailing" secondItem="jby-jN-WhG" secondAttribute="trailing" constant="15" id="UWd-3f-7Ob"/>
                         <constraint firstItem="TgE-ru-Pxc" firstAttribute="top" secondItem="Jap-Da-Y76" secondAttribute="top" constant="51" id="biT-wT-TZM"/>
                         <constraint firstItem="TgE-ru-Pxc" firstAttribute="trailing" secondItem="niY-5s-NOB" secondAttribute="trailing" id="cQt-su-hA4"/>
                         <constraint firstItem="TgE-ru-Pxc" firstAttribute="leading" secondItem="niY-5s-NOB" secondAttribute="leading" id="dcG-8D-M8d"/>
                         <constraint firstItem="niY-5s-NOB" firstAttribute="top" secondItem="TgE-ru-Pxc" secondAttribute="bottom" constant="18" id="djN-mz-KOr"/>
                         <constraint firstItem="niY-5s-NOB" firstAttribute="trailing" secondItem="jby-jN-WhG" secondAttribute="trailing" id="hXG-cW-J51"/>
                         <constraint firstItem="jby-jN-WhG" firstAttribute="top" secondItem="niY-5s-NOB" secondAttribute="bottom" constant="36" id="lly-Cn-Jek"/>
-                        <constraint firstItem="jby-jN-WhG" firstAttribute="leading" secondItem="Jap-Da-Y76" secondAttribute="leading" constant="28" id="mtt-1V-0ID"/>
+                        <constraint firstItem="jby-jN-WhG" firstAttribute="leading" secondItem="Jap-Da-Y76" secondAttribute="leading" constant="15" id="mtt-1V-0ID"/>
                     </constraints>
                 </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Odp-bA-uWO">
