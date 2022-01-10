@@ -35,17 +35,34 @@ extension ClosetVenueVC {
         setUpLocationPermissionUIs()
         registerNIBs()
     }
-
+        
     private func setUpLocationPermissionUIs() {
-        locationPermission = LocationPermission.showIn(view, uiFor: .requesting) {[weak self] (uiFor, view) in
+        let permissionStatus = UserLocation.shared.locationPermissionStatus
+        if permissionStatus == .authorizedAlways  || permissionStatus == .authorizedWhenInUse {
+            locationPermission?.isHidden = true
+            fetchUserCurrentLocation()
+        }else{
+            locationPermission = LocationPermission.showIn(view, uiFor: permissionStatus == .notDetermined ? .requesting : .denied) {[weak self] (uiFor, view) in
+                guard let self = self else{return}
+                switch uiFor {
+                case .requesting:
+                    self.fetchUserCurrentLocation()
+                case .denied:
+                    UserLocation.shared.openSettings()
+                default:
+                    fatalError("ERROR: NO CASE HANDLE")
+                }
+            }
+        }
+    }
+    
+    private func fetchUserCurrentLocation() {
+        UserLocation.shared.fetchUserLocationForOnce(self) {[weak self](locationPermissionStatus, location, error) in
             guard let self = self else{return}
-            switch uiFor {
-            case .requesting:
-                self.locationPermission?.uiFor = .denied
-            case .denied:
-                self.locationPermission?.isHidden = true
-            default:
-                fatalError("ERROR: NO CASE HANDLE")
+            DispatchQueue.main.async {
+                self.locationPermission?.isHidden = locationPermissionStatus == .authorizedWhenInUse || locationPermissionStatus == .authorizedAlways
+                self.locationPermission?.uiFor = locationPermissionStatus == .denied || locationPermissionStatus == .restricted ? .denied : .requesting
+                print(#function + " : ", location)
             }
         }
     }
