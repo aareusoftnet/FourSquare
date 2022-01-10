@@ -11,7 +11,7 @@ import UIKit
 class DashboardVC: ParentVC {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var closestContainer: UIView!
-    @IBOutlet weak var aboutUsContainer: UIView!
+    @IBOutlet weak var aboutUsContainer: UIView!    
 }
 
 //MARK: UIViewController method(s)
@@ -32,6 +32,8 @@ extension DashboardVC {
     }
     
     private func updateGlobalUIs() {
+        segmentedControl.setTitle("~Closest venue".localized, forSegmentAt:  0)
+        segmentedControl.setTitle("~About us".localized, forSegmentAt:  1)
         segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.appC8C8C8, NSAttributedString.Key.font: UIFont.proximaBold(14)], for: .normal)
         segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.appFFFFFF, NSAttributedString.Key.font: UIFont.proximaBold(14)], for: .selected)
     }

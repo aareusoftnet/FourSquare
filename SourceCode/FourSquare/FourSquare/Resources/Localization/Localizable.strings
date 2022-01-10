@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  FourSquare
+
+  Created by Vipul Patel on 09/01/22.
+*/
+
+"~Closest venue" = "Closest venue";
+"~About us" = "About us";
+"~We’d like to know your location." = "We’d like to know your location.";
+"~By allowing Location Permissions we can show you nearby location venues." = "By allowing Location Permissions we can show you nearby location venues.";
+"~Sure, Ask Me" = "Sure, Ask Me";
+"~Uh oh." = "Uh oh.";
+"~We won’t be able to work properly until you go to your device settings and give us permission to view your location." = "We won’t be able to work properly until you go to your device settings and give us permission to view your location.";
+"~Go To Settings" = "Go To Settings";
+"~Sorry." = "Sorry.";
+"~We won’t be able to find any venues near by your current location, please try after sometimes when we get any venues near by your current location." = "We won’t be able to find any venues near by your current location, please try after sometimes when we get any venues near by your current location.";
+"~Try again" = "Try again";
