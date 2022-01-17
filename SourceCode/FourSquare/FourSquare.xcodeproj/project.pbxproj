@@ -35,6 +35,13 @@
 		A3A641D4278B06FA00558462 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641D3278B06FA00558462 /* DashboardVC.swift */; };
 		A3B638BB278B0D1800F55B85 /* ClosestVenueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */; };
 		A3B638BE278B0D7800F55B85 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */; };
+		A3FA87DC279565AE003CD368 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87DB279565AE003CD368 /* APICall.swift */; };
+		A3FA87DF27959669003CD368 /* ParentMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87DE27959669003CD368 /* ParentMO.swift */; };
+		A3FA87E12795971F003CD368 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E02795971F003CD368 /* Venue.swift */; };
+		A3FA87E3279597EF003CD368 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E2279597EF003CD368 /* Category.swift */; };
+		A3FA87E527959829003CD368 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E427959829003CD368 /* Location.swift */; };
+		A3FA87E727959DD1003CD368 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E627959DD1003CD368 /* DictionaryExtension.swift */; };
+		A3FA87E92795C953003CD368 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E82795C953003CD368 /* Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +75,13 @@
 		A3A641D3278B06FA00558462 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestVenueVC.swift; sourceTree = "<group>"; };
 		A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		A3FA87DB279565AE003CD368 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		A3FA87DE27959669003CD368 /* ParentMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentMO.swift; sourceTree = "<group>"; };
+		A3FA87E02795971F003CD368 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		A3FA87E2279597EF003CD368 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A3FA87E427959829003CD368 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A3FA87E627959DD1003CD368 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		A3FA87E82795C953003CD368 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +204,8 @@
 		A386B253278C99670028E783 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				A3FA87DD279595D4003CD368 /* CoreDataModels */,
+				A3FA87DA27956592003CD368 /* APICall */,
 				A386B254278C996F0028E783 /* UserLocation */,
 				A3A641B8278ADC7D00558462 /* Extensions */,
 				A3A641CE278B05FF00558462 /* Constants */,
@@ -212,6 +228,7 @@
 				A386728B278B296F00BFAA04 /* UIViewExtensions.swift */,
 				A3A641BA278ADC7D00558462 /* UIFontExtensions.swift */,
 				A3A641BB278ADC7D00558462 /* UIColorExtensions.swift */,
+				A3FA87E627959DD1003CD368 /* DictionaryExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A641CF278B05FF00558462 /* AppConstant.swift */,
+				A3FA87E82795C953003CD368 /* Screen.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -275,6 +293,25 @@
 				A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */,
 			);
 			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		A3FA87DA27956592003CD368 /* APICall */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA87DB279565AE003CD368 /* APICall.swift */,
+			);
+			path = APICall;
+			sourceTree = "<group>";
+		};
+		A3FA87DD279595D4003CD368 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA87DE27959669003CD368 /* ParentMO.swift */,
+				A3FA87E02795971F003CD368 /* Venue.swift */,
+				A3FA87E2279597EF003CD368 /* Category.swift */,
+				A3FA87E427959829003CD368 /* Location.swift */,
+			);
+			path = CoreDataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,15 +395,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A386728A278B246F00BFAA04 /* StringExtensions.swift in Sources */,
+				A3FA87DC279565AE003CD368 /* APICall.swift in Sources */,
 				A3B638BB278B0D1800F55B85 /* ClosestVenueVC.swift in Sources */,
+				A3FA87E92795C953003CD368 /* Screen.swift in Sources */,
 				A3655FB9278AD57F008E1484 /* FourSquare.xcdatamodeld in Sources */,
+				A3FA87E12795971F003CD368 /* Venue.swift in Sources */,
+				A3FA87E727959DD1003CD368 /* DictionaryExtension.swift in Sources */,
 				A386728C278B296F00BFAA04 /* UIViewExtensions.swift in Sources */,
 				A3A641BE278ADC7D00558462 /* UIColorExtensions.swift in Sources */,
 				A386B256278C9AC90028E783 /* UserLocation.swift in Sources */,
 				A3A641D0278B05FF00558462 /* AppConstant.swift in Sources */,
 				A3B638BE278B0D7800F55B85 /* AboutUsVC.swift in Sources */,
 				A3867284278B216000BFAA04 /* LocationPermission.swift in Sources */,
+				A3FA87E3279597EF003CD368 /* Category.swift in Sources */,
 				A3A641CD278B05BD00558462 /* ParentVC.swift in Sources */,
+				A3FA87E527959829003CD368 /* Location.swift in Sources */,
+				A3FA87DF27959669003CD368 /* ParentMO.swift in Sources */,
 				A375E348278BD0E500E74595 /* EmptyList.swift in Sources */,
 				A3A641BD278ADC7D00558462 /* UIFontExtensions.swift in Sources */,
 				A3A641D4278B06FA00558462 /* DashboardVC.swift in Sources */,

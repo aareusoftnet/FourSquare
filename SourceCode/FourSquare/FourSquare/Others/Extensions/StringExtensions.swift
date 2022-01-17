@@ -12,4 +12,8 @@ extension String {
     var localized: String {
         return NSLocalizedString(self, comment: "")
     }
+    
+    var isEmpty: Bool {
+        return trimmingCharacters(in: .whitespacesAndNewlines).count == 0
+    }
 }

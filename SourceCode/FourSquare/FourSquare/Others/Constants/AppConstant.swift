@@ -7,16 +7,4 @@
 
 import UIKit
 
-//MARK: - Struct Screen
-public struct Screen {
-    fileprivate static let SIZE: CGSize = UIScreen.main.bounds.size
-    fileprivate static let WIDTH: CGFloat = SIZE.width
-    public static let HEIGHT: CGFloat = SIZE.height
-    public static let safeAreaInsets: UIEdgeInsets = SceneDelegate.shared!.window!.safeAreaInsets
-    public static var widthRatio: CGFloat {
-        return WIDTH/375
-    }
-    public static var heightRatio: CGFloat {
-        return HEIGHT/667
-    }
-}
+public var FIXED_COLORS: [UIColor] = [.appFFD100, .app01F991, .app00C2FF, .app8C00FF, .appFF416F]

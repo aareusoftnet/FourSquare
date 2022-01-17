@@ -14,8 +14,23 @@ class VenueList: UITableViewCell {
     @IBOutlet weak var lblDistance: UILabel!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblAddress: UILabel!
+    var objVenue: Venue? {
+        didSet {
+            prepareUIs()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    func prepareUIs() {
+        if let objVenue = objVenue {
+            viewCategory.backgroundColor = FIXED_COLORS.randomElement()
+            lblCategory.text = objVenue.category.name.isEmpty ? "--" : objVenue.category.name
+            lblDistance.text = objVenue.displayDistance
+            lblName.text = objVenue.name
+            lblAddress.text = objVenue.location.displayAddress
+        }
     }
 }

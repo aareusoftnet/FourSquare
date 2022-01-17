@@ -5,6 +5,7 @@
 //  Created by Vipul Patel on 09/01/22.
 //
 
+import CoreLocation
 import UIKit
 
 //MARK: - Class ClosetVenueVC
@@ -17,6 +18,7 @@ class ClosetVenueVC: ParentVC {
             tableView.reloadData()
         }
     }
+    private var arrOfVenues: [Venue] = []
 }
 
 //MARK: UIViewController method(s)
@@ -57,12 +59,18 @@ extension ClosetVenueVC {
     }
     
     private func fetchUserCurrentLocation() {
+        showIndicatorInCenter()
         UserLocation.shared.fetchUserLocationForOnce(self) {[weak self](locationPermissionStatus, location, error) in
             guard let self = self else{return}
             DispatchQueue.main.async {
                 self.locationPermission?.isHidden = locationPermissionStatus == .authorizedWhenInUse || locationPermissionStatus == .authorizedAlways
                 self.locationPermission?.uiFor = locationPermissionStatus == .denied || locationPermissionStatus == .restricted ? .denied : .requesting
-                print(#function + " : ", location)
+                print(#function + " : ", location ?? "nil")
+                if let localLocation = location {
+                    self.closestVenues(localLocation)
+                }else{
+                    self.hideIndicatorFromCenter()
+                }
             }
         }
     }
@@ -97,7 +105,7 @@ extension ClosetVenueVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return isEmpty ? 1 : 10
+        return isEmpty ? 1 : arrOfVenues.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -115,7 +123,7 @@ extension ClosetVenueVC: UITableViewDataSource, UITableViewDelegate {
             return cellEmptyList
         }else{
             let cellVenueList = tableView.dequeueReusableCell(withIdentifier: VenueList.identifier, for: indexPath) as! VenueList
-            cellVenueList.lblAddress.text = indexPath.row % 2 == 0 ? "New Ranip Road, Ahmedabad, Gujarat, IN, 382470" : "Navnirman Bank Bhavan Shrimali Soc, Rasala Marg, Navrangpura, Ahmedabad, Gujarat, IN, 382470"
+            cellVenueList.objVenue = arrOfVenues[indexPath.row]
             return cellVenueList
         }
     }
@@ -128,5 +136,57 @@ extension ClosetVenueVC: UserActionDelegate {
         if text == "~Try again".localized {
             isEmpty = false
         }
+    }
+}
+
+//MARK: API(s)
+extension ClosetVenueVC {
+    
+    func closestVenues(_ location: CLLocation) {
+        showIndicatorInCenter()
+        APICall.shared.getClosestVenues([
+            "ll" : "\(location.coordinate.latitude),\(location.coordinate.longitude)",
+            "radius": "2500",
+            "sort": "DISTANCE",
+            "limit": "50"
+        ]) {[weak self] (responseType, response, error) in
+            guard let self = self else{return}
+            switch responseType {
+            case .success:
+                self.prepareDatas(response)
+            case .failure:
+                self.hideIndicatorFromCenter()
+                if let localResponse = response {
+                    print("Failure: ", localResponse)
+                }else if let localError = error {
+                    print("Failure: ", localError)
+                }
+            }
+        }
+    }
+    
+    func prepareDatas(_ jsonResonse: Any?) {
+        if let toDictionary = jsonResonse as? NSDictionary,
+            let results = toDictionary["results"] as? [NSDictionary] {
+            print(#function + " : ", results.count)
+            results.forEach { dictionary in
+                let id = dictionary.getStringValue(forKey: "fsq_id")
+                let objVenue = Venue.addUpdateEntity(key: "id", value: id)
+                objVenue.initWith(dictionary)
+                arrOfVenues.append(objVenue)
+            }
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            //fetchStoredVenues()
+            isEmpty = arrOfVenues.isEmpty
+            tableView.isHidden = false
+            hideIndicatorFromCenter()
+        }
+    }
+    
+    func fetchStoredVenues() {
+        arrOfVenues = Venue.fetchDataFromEntity(predicate: nil, sortDescs: [NSSortDescriptor(key: "distance", ascending: true)])
+        isEmpty = arrOfVenues.isEmpty
+        tableView.isHidden = false
+        hideIndicatorFromCenter()
     }
 }

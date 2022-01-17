@@ -19,6 +19,7 @@ class AppDelegate: UIResponder {
          error conditions that could cause the creation of the store to fail.
         */
         let container = NSPersistentContainer(name: "FourSquare")
+        //print("CoreData file path : " + NSPersistentContainer.defaultDirectoryURL().absoluteString)
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
