@@ -18,3 +18,5 @@
 "~Try again" = "Try again";
 "~ meters away" = " meters away";
 "~ km away" = " kms away";
+"~No internet connection" = "No internet connection";
+"~ It seems to be you have no internet connection, please try to check your mobile data or wifi settings." = "It seems to be you have no internet connection, please try to check your mobile data or wifi settings.";

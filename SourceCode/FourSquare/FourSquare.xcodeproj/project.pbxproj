@@ -35,6 +35,9 @@
 		A3A641D4278B06FA00558462 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641D3278B06FA00558462 /* DashboardVC.swift */; };
 		A3B638BB278B0D1800F55B85 /* ClosestVenueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */; };
 		A3B638BE278B0D7800F55B85 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */; };
+		A3BF630C27968D3300A34FDB /* ValidationToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF630B27968D3300A34FDB /* ValidationToast.swift */; };
+		A3BF630E27968F3100A34FDB /* ValidationToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3BF630D27968F3100A34FDB /* ValidationToastView.xib */; };
+		A3BF63112796968B00A34FDB /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF63102796968B00A34FDB /* NetworkMonitor.swift */; };
 		A3FA87DC279565AE003CD368 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87DB279565AE003CD368 /* APICall.swift */; };
 		A3FA87DF27959669003CD368 /* ParentMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87DE27959669003CD368 /* ParentMO.swift */; };
 		A3FA87E12795971F003CD368 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E02795971F003CD368 /* Venue.swift */; };
@@ -75,6 +78,9 @@
 		A3A641D3278B06FA00558462 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestVenueVC.swift; sourceTree = "<group>"; };
 		A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		A3BF630B27968D3300A34FDB /* ValidationToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationToast.swift; sourceTree = "<group>"; };
+		A3BF630D27968F3100A34FDB /* ValidationToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValidationToastView.xib; sourceTree = "<group>"; };
+		A3BF63102796968B00A34FDB /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		A3FA87DB279565AE003CD368 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		A3FA87DE27959669003CD368 /* ParentMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentMO.swift; sourceTree = "<group>"; };
 		A3FA87E02795971F003CD368 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
@@ -177,6 +183,7 @@
 		A3867280278B207F00BFAA04 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				A3BF630A27968D1F00A34FDB /* ValidationToast */,
 				A3867281278B216000BFAA04 /* LocationPermission */,
 				A375E345278BD0E500E74595 /* EmptyList */,
 				A32C2619278B3C760058C2B0 /* VenueList */,
@@ -295,10 +302,20 @@
 			path = AboutUs;
 			sourceTree = "<group>";
 		};
+		A3BF630A27968D1F00A34FDB /* ValidationToast */ = {
+			isa = PBXGroup;
+			children = (
+				A3BF630B27968D3300A34FDB /* ValidationToast.swift */,
+				A3BF630D27968F3100A34FDB /* ValidationToastView.xib */,
+			);
+			path = ValidationToast;
+			sourceTree = "<group>";
+		};
 		A3FA87DA27956592003CD368 /* APICall */ = {
 			isa = PBXGroup;
 			children = (
 				A3FA87DB279565AE003CD368 /* APICall.swift */,
+				A3BF63102796968B00A34FDB /* NetworkMonitor.swift */,
 			);
 			path = APICall;
 			sourceTree = "<group>";
@@ -381,6 +398,7 @@
 				A32C261D278B3CA20058C2B0 /* VenueList.xib in Resources */,
 				A3867285278B216000BFAA04 /* LocationPermission.xib in Resources */,
 				A3655FBB278AD580008E1484 /* Assets.xcassets in Resources */,
+				A3BF630E27968F3100A34FDB /* ValidationToastView.xib in Resources */,
 				A375E349278BD0E500E74595 /* EmptyList.xib in Resources */,
 				A3A641C9278ADD8D00558462 /* ProximaNova-Black.otf in Resources */,
 				A3655FB6278AD57F008E1484 /* Main.storyboard in Resources */,
@@ -400,6 +418,7 @@
 				A3FA87E92795C953003CD368 /* Screen.swift in Sources */,
 				A3655FB9278AD57F008E1484 /* FourSquare.xcdatamodeld in Sources */,
 				A3FA87E12795971F003CD368 /* Venue.swift in Sources */,
+				A3BF630C27968D3300A34FDB /* ValidationToast.swift in Sources */,
 				A3FA87E727959DD1003CD368 /* DictionaryExtension.swift in Sources */,
 				A386728C278B296F00BFAA04 /* UIViewExtensions.swift in Sources */,
 				A3A641BE278ADC7D00558462 /* UIColorExtensions.swift in Sources */,
@@ -407,6 +426,7 @@
 				A3A641D0278B05FF00558462 /* AppConstant.swift in Sources */,
 				A3B638BE278B0D7800F55B85 /* AboutUsVC.swift in Sources */,
 				A3867284278B216000BFAA04 /* LocationPermission.swift in Sources */,
+				A3BF63112796968B00A34FDB /* NetworkMonitor.swift in Sources */,
 				A3FA87E3279597EF003CD368 /* Category.swift in Sources */,
 				A3A641CD278B05BD00558462 /* ParentVC.swift in Sources */,
 				A3FA87E527959829003CD368 /* Location.swift in Sources */,

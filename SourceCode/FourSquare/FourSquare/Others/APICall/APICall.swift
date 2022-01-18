@@ -51,7 +51,7 @@ enum APIEndPoint {
 class APICall {
     static let shared = APICall()
     private var baseURL = APIBaseURLType.production.url
-    private var authorizationToken = "fsq33HOUXYXUKdNycY6KqfQdu/bxYFndcMxKcRak3vMYqdo="
+    private var authorizationToken = "fsq33HOUXYXUKdNycY6KqfQdu/bxYFndcMxKcRak3vMYqdo="//REPLACE THIS TOKEN IF FOUR SQUARE ACCOUNT CHANGED.
     private init(){}
 
     private func getAPICall(_ httpBody: [String: String] = [:], apiEndPoint: APIEndPoint, completionHandler: (((_ responseType: APIResponseType, _ response: Any?, _ error: Error?) -> ())?)) {

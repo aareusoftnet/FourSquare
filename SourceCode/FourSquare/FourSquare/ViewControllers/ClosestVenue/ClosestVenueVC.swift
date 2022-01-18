@@ -19,6 +19,7 @@ class ClosetVenueVC: ParentVC {
         }
     }
     private var arrOfVenues: [Venue] = []
+    private var validationToast: ValidationToastView?
 }
 
 //MARK: UIViewController method(s)
@@ -59,13 +60,11 @@ extension ClosetVenueVC {
     }
     
     private func fetchUserCurrentLocation() {
-        showIndicatorInCenter()
         UserLocation.shared.fetchUserLocationForOnce(self) {[weak self](locationPermissionStatus, location, error) in
             guard let self = self else{return}
             DispatchQueue.main.async {
                 self.locationPermission?.isHidden = locationPermissionStatus == .authorizedWhenInUse || locationPermissionStatus == .authorizedAlways
                 self.locationPermission?.uiFor = locationPermissionStatus == .denied || locationPermissionStatus == .restricted ? .denied : .requesting
-                print(#function + " : ", location ?? "nil")
                 if let localLocation = location {
                     self.closestVenues(localLocation)
                 }else{
@@ -134,7 +133,8 @@ extension ClosetVenueVC: UserActionDelegate {
     
     func didTapOn(_ text: String?, cell: UITableViewCell?) {
         if text == "~Try again".localized {
-            isEmpty = false
+            tableView.isHidden = true
+            setUpLocationPermissionUIs()
         }
     }
 }
@@ -143,43 +143,47 @@ extension ClosetVenueVC: UserActionDelegate {
 extension ClosetVenueVC {
     
     func closestVenues(_ location: CLLocation) {
-        showIndicatorInCenter()
-        APICall.shared.getClosestVenues([
-            "ll" : "\(location.coordinate.latitude),\(location.coordinate.longitude)",
-            "radius": "2500",
-            "sort": "DISTANCE",
-            "limit": "50"
-        ]) {[weak self] (responseType, response, error) in
-            guard let self = self else{return}
-            switch responseType {
-            case .success:
-                self.prepareDatas(response)
-            case .failure:
-                self.hideIndicatorFromCenter()
-                if let localResponse = response {
-                    print("Failure: ", localResponse)
-                }else if let localError = error {
-                    print("Failure: ", localError)
+        if NetworkMonitor.shared.isReachable {
+            showIndicatorInCenter()
+            APICall.shared.getClosestVenues([
+                "ll" : "\(location.coordinate.latitude),\(location.coordinate.longitude)",
+                "radius": "2500",
+                "sort": "DISTANCE",
+                "limit": "50"
+            ]) {[weak self] (responseType, response, error) in
+                guard let self = self else{return}
+                switch responseType {
+                case .success:
+                    self.prepareDatas(response)
+                case .failure:
+                    self.hideIndicatorFromCenter()
+                    if let localResponse = response as? NSDictionary,
+                        let message = localResponse["message"] as? String {
+                        self.showValidationMessage(message, autoHide: true)
+                    }else if let localError = error {
+                        self.showValidationMessage(localError.localizedDescription, autoHide: true)
+                    }
                 }
             }
+        }else{
+            fetchStoredVenues()
         }
     }
     
     func prepareDatas(_ jsonResonse: Any?) {
+        arrOfVenues = []
         if let toDictionary = jsonResonse as? NSDictionary,
             let results = toDictionary["results"] as? [NSDictionary] {
-            print(#function + " : ", results.count)
             results.forEach { dictionary in
                 let id = dictionary.getStringValue(forKey: "fsq_id")
                 let objVenue = Venue.addUpdateEntity(key: "id", value: id)
                 objVenue.initWith(dictionary)
                 arrOfVenues.append(objVenue)
             }
-            (UIApplication.shared.delegate as! AppDelegate).saveContext()
-            //fetchStoredVenues()
             isEmpty = arrOfVenues.isEmpty
             tableView.isHidden = false
             hideIndicatorFromCenter()
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
         }
     }
     
@@ -188,5 +192,20 @@ extension ClosetVenueVC {
         isEmpty = arrOfVenues.isEmpty
         tableView.isHidden = false
         hideIndicatorFromCenter()
+    }
+}
+
+//MARK: Utility
+extension ClosetVenueVC {
+    
+    func showValidationMessage(_ message: String, autoHide: Bool) {
+        validationToast = ValidationToast.shared.showToast(message, autoHide: autoHide)
+    }
+    
+    func hideValidationMessage() {
+        validationToast?.animateOut(duration: 0.3, delay: 0.0, completion: {
+            self.validationToast?.removeFromSuperview()
+            self.validationToast = nil
+        })
     }
 }
