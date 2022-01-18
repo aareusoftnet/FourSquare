@@ -5,6 +5,7 @@
 //  Created by Vipul Patel on 09/01/22.
 //
 
+import CoreLocation
 import UIKit
 
 //MARK: - Class ClosetVenueVC
@@ -17,6 +18,8 @@ class ClosetVenueVC: ParentVC {
             tableView.reloadData()
         }
     }
+    private var arrOfVenues: [Venue] = []
+    private var validationToast: ValidationToastView?
 }
 
 //MARK: UIViewController method(s)
@@ -62,7 +65,11 @@ extension ClosetVenueVC {
             DispatchQueue.main.async {
                 self.locationPermission?.isHidden = locationPermissionStatus == .authorizedWhenInUse || locationPermissionStatus == .authorizedAlways
                 self.locationPermission?.uiFor = locationPermissionStatus == .denied || locationPermissionStatus == .restricted ? .denied : .requesting
-                print(#function + " : ", location)
+                if let localLocation = location {
+                    self.closestVenues(localLocation)
+                }else{
+                    self.hideIndicatorFromCenter()
+                }
             }
         }
     }
@@ -97,7 +104,7 @@ extension ClosetVenueVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return isEmpty ? 1 : 10
+        return isEmpty ? 1 : arrOfVenues.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -115,7 +122,7 @@ extension ClosetVenueVC: UITableViewDataSource, UITableViewDelegate {
             return cellEmptyList
         }else{
             let cellVenueList = tableView.dequeueReusableCell(withIdentifier: VenueList.identifier, for: indexPath) as! VenueList
-            cellVenueList.lblAddress.text = indexPath.row % 2 == 0 ? "New Ranip Road, Ahmedabad, Gujarat, IN, 382470" : "Navnirman Bank Bhavan Shrimali Soc, Rasala Marg, Navrangpura, Ahmedabad, Gujarat, IN, 382470"
+            cellVenueList.objVenue = arrOfVenues[indexPath.row]
             return cellVenueList
         }
     }
@@ -126,7 +133,79 @@ extension ClosetVenueVC: UserActionDelegate {
     
     func didTapOn(_ text: String?, cell: UITableViewCell?) {
         if text == "~Try again".localized {
-            isEmpty = false
+            tableView.isHidden = true
+            setUpLocationPermissionUIs()
         }
+    }
+}
+
+//MARK: API(s)
+extension ClosetVenueVC {
+    
+    func closestVenues(_ location: CLLocation) {
+        if NetworkMonitor.shared.isReachable {
+            showIndicatorInCenter()
+            APICall.shared.getClosestVenues([
+                "ll" : "\(location.coordinate.latitude),\(location.coordinate.longitude)",
+                "radius": "2500",
+                "sort": "DISTANCE",
+                "limit": "50"
+            ]) {[weak self] (responseType, response, error) in
+                guard let self = self else{return}
+                switch responseType {
+                case .success:
+                    self.prepareDatas(response)
+                case .failure:
+                    self.hideIndicatorFromCenter()
+                    if let localResponse = response as? NSDictionary,
+                        let message = localResponse["message"] as? String {
+                        self.showValidationMessage(message, autoHide: true)
+                    }else if let localError = error {
+                        self.showValidationMessage(localError.localizedDescription, autoHide: true)
+                    }
+                }
+            }
+        }else{
+            fetchStoredVenues()
+        }
+    }
+    
+    func prepareDatas(_ jsonResonse: Any?) {
+        arrOfVenues = []
+        if let toDictionary = jsonResonse as? NSDictionary,
+            let results = toDictionary["results"] as? [NSDictionary] {
+            results.forEach { dictionary in
+                let id = dictionary.getStringValue(forKey: "fsq_id")
+                let objVenue = Venue.addUpdateEntity(key: "id", value: id)
+                objVenue.initWith(dictionary)
+                arrOfVenues.append(objVenue)
+            }
+            isEmpty = arrOfVenues.isEmpty
+            tableView.isHidden = false
+            hideIndicatorFromCenter()
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        }
+    }
+    
+    func fetchStoredVenues() {
+        arrOfVenues = Venue.fetchDataFromEntity(predicate: nil, sortDescs: [NSSortDescriptor(key: "distance", ascending: true)])
+        isEmpty = arrOfVenues.isEmpty
+        tableView.isHidden = false
+        hideIndicatorFromCenter()
+    }
+}
+
+//MARK: Utility
+extension ClosetVenueVC {
+    
+    func showValidationMessage(_ message: String, autoHide: Bool) {
+        validationToast = ValidationToast.shared.showToast(message, autoHide: autoHide)
+    }
+    
+    func hideValidationMessage() {
+        validationToast?.animateOut(duration: 0.3, delay: 0.0, completion: {
+            self.validationToast?.removeFromSuperview()
+            self.validationToast = nil
+        })
     }
 }

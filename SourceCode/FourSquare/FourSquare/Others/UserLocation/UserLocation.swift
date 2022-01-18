@@ -5,7 +5,6 @@
 //  Created by Vipul Patel on 10/01/22.
 //
 
-import UIKit
 import CoreLocation
 import MapKit
 
