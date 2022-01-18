@@ -27,6 +27,7 @@ It's a sample iOSTest practical task for the MentorMate company. I have implemen
 ![02_2][02_2-link]
 ![02_3][02_3-link]
 ![02_4][02_4-link]
+![02_5][02_5-link]
 ![03][03-link]
 
 ## Requirements
@@ -65,9 +66,10 @@ https://github.com/aareusoftnet/FourSquare/tree/main/SourceCode
 [upworkcontactme-badge]: https://img.shields.io/static/v1?style=for-the-badge&label=UPWORK&message=CONTACT%20ME&color=OOOOOO
 [upwork-link]: https://www.upwork.com/freelancers/~012d5b6e889c57a2a1
 [appdemonstrations-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Videos/AppDemonstrations.gif
-[01-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/01.PNG
-[02_1-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_1.PNG
-[02_2-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_2.PNG
-[02_3-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_3.PNG
-[02_4-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_4.PNG
-[03_5-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/03.PNG
+[01-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/01.png
+[02_1-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_1.png
+[02_2-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_2.png
+[02_3-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_3.png
+[02_4-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_4.png
+[02_5-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_5.png
+[03-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/03.png
