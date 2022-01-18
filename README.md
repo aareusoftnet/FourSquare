@@ -27,6 +27,7 @@ It's a sample iOSTest practical task for the MentorMate company. I have implemen
 ![02_2][02_2-link]
 ![02_3][02_3-link]
 ![02_4][02_4-link]
+![02_5][02_5-link]
 ![03][03-link]
 
 ## Requirements
@@ -70,4 +71,4 @@ https://github.com/aareusoftnet/FourSquare/tree/main/SourceCode
 [02_2-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_2.PNG
 [02_3-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_3.PNG
 [02_4-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/02_4.PNG
-[03_5-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/03.PNG
+[03-link]: https://github.com/aareusoftnet/FourSquare/blob/main/Assets/Screens/03.PNG

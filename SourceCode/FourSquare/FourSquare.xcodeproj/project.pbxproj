@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32C261C278B3CA20058C2B0 /* VenueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C261A278B3CA20058C2B0 /* VenueList.swift */; };
+		A32C261D278B3CA20058C2B0 /* VenueList.xib in Resources */ = {isa = PBXBuildFile; fileRef = A32C261B278B3CA20058C2B0 /* VenueList.xib */; };
 		A3655FAF278AD57F008E1484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3655FAE278AD57F008E1484 /* AppDelegate.swift */; };
 		A3655FB1278AD57F008E1484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3655FB0278AD57F008E1484 /* SceneDelegate.swift */; };
-		A3655FB3278AD57F008E1484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3655FB2278AD57F008E1484 /* ViewController.swift */; };
 		A3655FB6278AD57F008E1484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3655FB4278AD57F008E1484 /* Main.storyboard */; };
 		A3655FB9278AD57F008E1484 /* FourSquare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3655FB7278AD57F008E1484 /* FourSquare.xcdatamodeld */; };
 		A3655FBB278AD580008E1484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3655FBA278AD580008E1484 /* Assets.xcassets */; };
 		A3655FBE278AD580008E1484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3655FBC278AD580008E1484 /* LaunchScreen.storyboard */; };
+		A375E348278BD0E500E74595 /* EmptyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375E346278BD0E500E74595 /* EmptyList.swift */; };
+		A375E349278BD0E500E74595 /* EmptyList.xib in Resources */ = {isa = PBXBuildFile; fileRef = A375E347278BD0E500E74595 /* EmptyList.xib */; };
+		A3867284278B216000BFAA04 /* LocationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3867282278B216000BFAA04 /* LocationPermission.swift */; };
+		A3867285278B216000BFAA04 /* LocationPermission.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3867283278B216000BFAA04 /* LocationPermission.xib */; };
+		A3867288278B241400BFAA04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3867287278B241400BFAA04 /* Localizable.strings */; };
+		A386728A278B246F00BFAA04 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3867289278B246F00BFAA04 /* StringExtensions.swift */; };
+		A386728C278B296F00BFAA04 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386728B278B296F00BFAA04 /* UIViewExtensions.swift */; };
+		A386B256278C9AC90028E783 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386B255278C9AC90028E783 /* UserLocation.swift */; };
 		A3A641BD278ADC7D00558462 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641BA278ADC7D00558462 /* UIFontExtensions.swift */; };
 		A3A641BE278ADC7D00558462 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641BB278ADC7D00558462 /* UIColorExtensions.swift */; };
 		A3A641C6278ADD8D00558462 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C1278ADD8D00558462 /* ProximaNova-Light.otf */; };
@@ -21,18 +30,42 @@
 		A3A641C8278ADD8D00558462 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C3278ADD8D00558462 /* ProximaNova-Bold.otf */; };
 		A3A641C9278ADD8D00558462 /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C4278ADD8D00558462 /* ProximaNova-Black.otf */; };
 		A3A641CA278ADD8D00558462 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A641C5278ADD8D00558462 /* ProximaNova-Regular.otf */; };
+		A3A641CD278B05BD00558462 /* ParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641CC278B05BD00558462 /* ParentVC.swift */; };
+		A3A641D0278B05FF00558462 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641CF278B05FF00558462 /* AppConstant.swift */; };
+		A3A641D4278B06FA00558462 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A641D3278B06FA00558462 /* DashboardVC.swift */; };
+		A3B638BB278B0D1800F55B85 /* ClosestVenueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */; };
+		A3B638BE278B0D7800F55B85 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */; };
+		A3BF630C27968D3300A34FDB /* ValidationToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF630B27968D3300A34FDB /* ValidationToast.swift */; };
+		A3BF630E27968F3100A34FDB /* ValidationToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3BF630D27968F3100A34FDB /* ValidationToastView.xib */; };
+		A3BF63112796968B00A34FDB /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF63102796968B00A34FDB /* NetworkMonitor.swift */; };
+		A3FA87DC279565AE003CD368 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87DB279565AE003CD368 /* APICall.swift */; };
+		A3FA87DF27959669003CD368 /* ParentMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87DE27959669003CD368 /* ParentMO.swift */; };
+		A3FA87E12795971F003CD368 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E02795971F003CD368 /* Venue.swift */; };
+		A3FA87E3279597EF003CD368 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E2279597EF003CD368 /* Category.swift */; };
+		A3FA87E527959829003CD368 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E427959829003CD368 /* Location.swift */; };
+		A3FA87E727959DD1003CD368 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E627959DD1003CD368 /* DictionaryExtension.swift */; };
+		A3FA87E92795C953003CD368 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA87E82795C953003CD368 /* Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A32C261A278B3CA20058C2B0 /* VenueList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueList.swift; sourceTree = "<group>"; };
+		A32C261B278B3CA20058C2B0 /* VenueList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueList.xib; sourceTree = "<group>"; };
 		A3655FAB278AD57F008E1484 /* FourSquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3655FAE278AD57F008E1484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3655FB0278AD57F008E1484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3655FB2278AD57F008E1484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3655FB5278AD57F008E1484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3655FB8278AD57F008E1484 /* FourSquare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FourSquare.xcdatamodel; sourceTree = "<group>"; };
 		A3655FBA278AD580008E1484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3655FBD278AD580008E1484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3655FBF278AD580008E1484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A375E346278BD0E500E74595 /* EmptyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyList.swift; sourceTree = "<group>"; };
+		A375E347278BD0E500E74595 /* EmptyList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyList.xib; sourceTree = "<group>"; };
+		A3867282278B216000BFAA04 /* LocationPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPermission.swift; sourceTree = "<group>"; };
+		A3867283278B216000BFAA04 /* LocationPermission.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationPermission.xib; sourceTree = "<group>"; };
+		A3867287278B241400BFAA04 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A3867289278B246F00BFAA04 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		A386728B278B296F00BFAA04 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		A386B255278C9AC90028E783 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 		A3A641BA278ADC7D00558462 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		A3A641BB278ADC7D00558462 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		A3A641C1278ADD8D00558462 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
@@ -40,6 +73,21 @@
 		A3A641C3278ADD8D00558462 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
 		A3A641C4278ADD8D00558462 /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
 		A3A641C5278ADD8D00558462 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		A3A641CC278B05BD00558462 /* ParentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentVC.swift; sourceTree = "<group>"; };
+		A3A641CF278B05FF00558462 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		A3A641D3278B06FA00558462 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestVenueVC.swift; sourceTree = "<group>"; };
+		A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		A3BF630B27968D3300A34FDB /* ValidationToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationToast.swift; sourceTree = "<group>"; };
+		A3BF630D27968F3100A34FDB /* ValidationToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValidationToastView.xib; sourceTree = "<group>"; };
+		A3BF63102796968B00A34FDB /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		A3FA87DB279565AE003CD368 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		A3FA87DE27959669003CD368 /* ParentMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentMO.swift; sourceTree = "<group>"; };
+		A3FA87E02795971F003CD368 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		A3FA87E2279597EF003CD368 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A3FA87E427959829003CD368 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A3FA87E627959DD1003CD368 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		A3FA87E82795C953003CD368 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A32C2619278B3C760058C2B0 /* VenueList */ = {
+			isa = PBXGroup;
+			children = (
+				A32C261A278B3CA20058C2B0 /* VenueList.swift */,
+				A32C261B278B3CA20058C2B0 /* VenueList.xib */,
+			);
+			path = VenueList;
+			sourceTree = "<group>";
+		};
 		A3655FA2278AD57F008E1484 = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +129,10 @@
 		A3655FAD278AD57F008E1484 /* FourSquare */ = {
 			isa = PBXGroup;
 			children = (
+				A3867280278B207F00BFAA04 /* XIBs */,
 				A3655FC6278AD59D008E1484 /* Storyboards */,
 				A3655FC5278AD58E008E1484 /* ViewControllers */,
-				A3A641B8278ADC7D00558462 /* Extensions */,
+				A386B253278C99670028E783 /* Others */,
 				A3A641BF278ADD8D00558462 /* Resources */,
 				A3655FC7278AD600008E1484 /* Supports */,
 			);
@@ -86,7 +144,10 @@
 			children = (
 				A3655FAE278AD57F008E1484 /* AppDelegate.swift */,
 				A3655FB0278AD57F008E1484 /* SceneDelegate.swift */,
-				A3655FB2278AD57F008E1484 /* ViewController.swift */,
+				A3A641CB278B05A100558462 /* Parent */,
+				A3A641D2278B06B300558462 /* Dashboard */,
+				A3B638B9278B0CF200F55B85 /* ClosestVenue */,
+				A3B638BC278B0D4100F55B85 /* AboutUs */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -110,11 +171,71 @@
 			path = Supports;
 			sourceTree = "<group>";
 		};
+		A375E345278BD0E500E74595 /* EmptyList */ = {
+			isa = PBXGroup;
+			children = (
+				A375E346278BD0E500E74595 /* EmptyList.swift */,
+				A375E347278BD0E500E74595 /* EmptyList.xib */,
+			);
+			path = EmptyList;
+			sourceTree = "<group>";
+		};
+		A3867280278B207F00BFAA04 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				A3BF630A27968D1F00A34FDB /* ValidationToast */,
+				A3867281278B216000BFAA04 /* LocationPermission */,
+				A375E345278BD0E500E74595 /* EmptyList */,
+				A32C2619278B3C760058C2B0 /* VenueList */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		A3867281278B216000BFAA04 /* LocationPermission */ = {
+			isa = PBXGroup;
+			children = (
+				A3867282278B216000BFAA04 /* LocationPermission.swift */,
+				A3867283278B216000BFAA04 /* LocationPermission.xib */,
+			);
+			path = LocationPermission;
+			sourceTree = "<group>";
+		};
+		A3867286278B237700BFAA04 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				A3867287278B241400BFAA04 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		A386B253278C99670028E783 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA87DD279595D4003CD368 /* CoreDataModels */,
+				A3FA87DA27956592003CD368 /* APICall */,
+				A386B254278C996F0028E783 /* UserLocation */,
+				A3A641B8278ADC7D00558462 /* Extensions */,
+				A3A641CE278B05FF00558462 /* Constants */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		A386B254278C996F0028E783 /* UserLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A386B255278C9AC90028E783 /* UserLocation.swift */,
+			);
+			path = UserLocation;
+			sourceTree = "<group>";
+		};
 		A3A641B8278ADC7D00558462 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A3867289278B246F00BFAA04 /* StringExtensions.swift */,
+				A386728B278B296F00BFAA04 /* UIViewExtensions.swift */,
 				A3A641BA278ADC7D00558462 /* UIFontExtensions.swift */,
 				A3A641BB278ADC7D00558462 /* UIColorExtensions.swift */,
+				A3FA87E627959DD1003CD368 /* DictionaryExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -123,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A641C0278ADD8D00558462 /* Fonts */,
+				A3867286278B237700BFAA04 /* Localization */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -137,6 +259,76 @@
 				A3A641C2278ADD8D00558462 /* ProximaNova-Semibold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A3A641CB278B05A100558462 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				A3A641CC278B05BD00558462 /* ParentVC.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		A3A641CE278B05FF00558462 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A3A641CF278B05FF00558462 /* AppConstant.swift */,
+				A3FA87E82795C953003CD368 /* Screen.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A3A641D2278B06B300558462 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A3A641D3278B06FA00558462 /* DashboardVC.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A3B638B9278B0CF200F55B85 /* ClosestVenue */ = {
+			isa = PBXGroup;
+			children = (
+				A3B638BA278B0D1800F55B85 /* ClosestVenueVC.swift */,
+			);
+			path = ClosestVenue;
+			sourceTree = "<group>";
+		};
+		A3B638BC278B0D4100F55B85 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				A3B638BD278B0D7800F55B85 /* AboutUsVC.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		A3BF630A27968D1F00A34FDB /* ValidationToast */ = {
+			isa = PBXGroup;
+			children = (
+				A3BF630B27968D3300A34FDB /* ValidationToast.swift */,
+				A3BF630D27968F3100A34FDB /* ValidationToastView.xib */,
+			);
+			path = ValidationToast;
+			sourceTree = "<group>";
+		};
+		A3FA87DA27956592003CD368 /* APICall */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA87DB279565AE003CD368 /* APICall.swift */,
+				A3BF63102796968B00A34FDB /* NetworkMonitor.swift */,
+			);
+			path = APICall;
+			sourceTree = "<group>";
+		};
+		A3FA87DD279595D4003CD368 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA87DE27959669003CD368 /* ParentMO.swift */,
+				A3FA87E02795971F003CD368 /* Venue.swift */,
+				A3FA87E2279597EF003CD368 /* Category.swift */,
+				A3FA87E427959829003CD368 /* Location.swift */,
+			);
+			path = CoreDataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +394,12 @@
 				A3A641C6278ADD8D00558462 /* ProximaNova-Light.otf in Resources */,
 				A3A641C7278ADD8D00558462 /* ProximaNova-Semibold.otf in Resources */,
 				A3A641C8278ADD8D00558462 /* ProximaNova-Bold.otf in Resources */,
+				A3867288278B241400BFAA04 /* Localizable.strings in Resources */,
+				A32C261D278B3CA20058C2B0 /* VenueList.xib in Resources */,
+				A3867285278B216000BFAA04 /* LocationPermission.xib in Resources */,
 				A3655FBB278AD580008E1484 /* Assets.xcassets in Resources */,
+				A3BF630E27968F3100A34FDB /* ValidationToastView.xib in Resources */,
+				A375E349278BD0E500E74595 /* EmptyList.xib in Resources */,
 				A3A641C9278ADD8D00558462 /* ProximaNova-Black.otf in Resources */,
 				A3655FB6278AD57F008E1484 /* Main.storyboard in Resources */,
 			);
@@ -215,10 +412,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A386728A278B246F00BFAA04 /* StringExtensions.swift in Sources */,
+				A3FA87DC279565AE003CD368 /* APICall.swift in Sources */,
+				A3B638BB278B0D1800F55B85 /* ClosestVenueVC.swift in Sources */,
+				A3FA87E92795C953003CD368 /* Screen.swift in Sources */,
 				A3655FB9278AD57F008E1484 /* FourSquare.xcdatamodeld in Sources */,
+				A3FA87E12795971F003CD368 /* Venue.swift in Sources */,
+				A3BF630C27968D3300A34FDB /* ValidationToast.swift in Sources */,
+				A3FA87E727959DD1003CD368 /* DictionaryExtension.swift in Sources */,
+				A386728C278B296F00BFAA04 /* UIViewExtensions.swift in Sources */,
 				A3A641BE278ADC7D00558462 /* UIColorExtensions.swift in Sources */,
-				A3655FB3278AD57F008E1484 /* ViewController.swift in Sources */,
+				A386B256278C9AC90028E783 /* UserLocation.swift in Sources */,
+				A3A641D0278B05FF00558462 /* AppConstant.swift in Sources */,
+				A3B638BE278B0D7800F55B85 /* AboutUsVC.swift in Sources */,
+				A3867284278B216000BFAA04 /* LocationPermission.swift in Sources */,
+				A3BF63112796968B00A34FDB /* NetworkMonitor.swift in Sources */,
+				A3FA87E3279597EF003CD368 /* Category.swift in Sources */,
+				A3A641CD278B05BD00558462 /* ParentVC.swift in Sources */,
+				A3FA87E527959829003CD368 /* Location.swift in Sources */,
+				A3FA87DF27959669003CD368 /* ParentMO.swift in Sources */,
+				A375E348278BD0E500E74595 /* EmptyList.swift in Sources */,
 				A3A641BD278ADC7D00558462 /* UIFontExtensions.swift in Sources */,
+				A3A641D4278B06FA00558462 /* DashboardVC.swift in Sources */,
+				A32C261C278B3CA20058C2B0 /* VenueList.swift in Sources */,
 				A3655FAF278AD57F008E1484 /* AppDelegate.swift in Sources */,
 				A3655FB1278AD57F008E1484 /* SceneDelegate.swift in Sources */,
 			);
@@ -374,6 +590,9 @@
 				DEVELOPMENT_TEAM = R4FB79X8BS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FourSquare/Supports/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your precise location is used to display closest venue near by your position.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your precise location is used to display closest venue near by your position.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your precise location is used to display closest venue near by your position.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -408,6 +627,9 @@
 				DEVELOPMENT_TEAM = R4FB79X8BS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FourSquare/Supports/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your precise location is used to display closest venue near by your position.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your precise location is used to display closest venue near by your position.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your precise location is used to display closest venue near by your position.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
