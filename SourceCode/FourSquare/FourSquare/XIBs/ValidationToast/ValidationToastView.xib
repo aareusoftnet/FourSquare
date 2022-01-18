@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="L7r-aK-sEy" customClass="ValidationToastView" customModule="FourSquare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqa-Vv-cqM" userLabel="AnimatingView">
+                    <rect key="frame" x="0.0" y="-15" width="375" height="15"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poy-p5-K8f">
+                            <rect key="frame" x="8" y="0.0" width="359" height="0.0"/>
+                            <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="poy-p5-K8f" secondAttribute="trailing" constant="8" id="CcL-3L-aRH"/>
+                        <constraint firstAttribute="bottom" secondItem="poy-p5-K8f" secondAttribute="bottom" constant="15" id="DAH-PF-Ryt"/>
+                        <constraint firstItem="poy-p5-K8f" firstAttribute="leading" secondItem="rqa-Vv-cqM" secondAttribute="leading" constant="8" id="UUo-JI-vkG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VrN-7W-Iya"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rqa-Vv-cqM" secondAttribute="trailing" id="Gqv-XK-u1i"/>
+                <constraint firstItem="rqa-Vv-cqM" firstAttribute="height" secondItem="L7r-aK-sEy" secondAttribute="height" id="eFg-k4-ksU"/>
+                <constraint firstItem="rqa-Vv-cqM" firstAttribute="leading" secondItem="L7r-aK-sEy" secondAttribute="leading" id="nyO-qb-oxO"/>
+                <constraint firstAttribute="bottom" secondItem="rqa-Vv-cqM" secondAttribute="bottom" constant="15" id="sAn-xM-8dG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animatingView" destination="rqa-Vv-cqM" id="xar-51-mhf"/>
+                <outlet property="animatingViewBottomConstraint" destination="sAn-xM-8dG" id="5fb-Y6-WBc"/>
+                <outlet property="messageLabel" destination="poy-p5-K8f" id="Rnr-7j-4ET"/>
+            </connections>
+            <point key="canvasLocation" x="256.80000000000001" y="330.29556650246309"/>
+        </view>
+    </objects>
+</document>
